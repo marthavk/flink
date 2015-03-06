@@ -1144,7 +1144,7 @@ public class DataStream<OUT> {
 	 *            Partitioner to set.
 	 * @return The modified DataStream.
 	 */
-	protected DataStream<OUT> setConnectionType(StreamPartitioner<OUT> partitioner) {
+	public DataStream<OUT> setConnectionType(StreamPartitioner<OUT> partitioner) {
 		DataStream<OUT> returnStream = this.copy();
 
 		for (DataStream<OUT> stream : returnStream.mergedStreams) {

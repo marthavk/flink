@@ -131,6 +131,8 @@ public abstract class StreamInvokable<IN, OUT> implements Serializable {
 		}
 	}
 
+
+
 	/**
 	 * Open method to be used if the user defined function extends the
 	 * RichFunction class
